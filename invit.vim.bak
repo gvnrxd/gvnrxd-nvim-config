@@ -1,0 +1,43 @@
+" General settings
+set number
+set relativenumber
+set mouse=a
+set termguicolors
+
+" Lua configuration
+lua << EOF
+
+-- Install plugins
+vim.pack.add({
+    {
+        src = "https://github.com/catppuccin/nvim",
+        name = "catppuccin",
+    },
+})
+
+-- Configure Catppuccin
+require("catppuccin").setup({
+    flavour = "mocha",
+    transparent_background = false,
+    term_colors = true,
+
+    dim_inactive = {
+        enabled = false,
+        shade = "dark",
+        percentage = 0.15,
+    },
+
+    styles = {
+        comments = { "italic" },
+        conditionals = { "italic" },
+        functions = {},
+        keywords = {},
+        strings = {},
+        variables = {},
+    },
+})
+
+-- Apply the theme
+vim.cmd.colorscheme("catppuccin-nvim")
+
+EOF

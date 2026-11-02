@@ -1,0 +1,16 @@
+# Environment variables
+.env
+.env.*
+
+# Secrets
+secrets.lua
+credentials.lua
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
