@@ -1,3 +1,7 @@
+-- Disable neovims builts in file-browser
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- Load editor settings
 require("config.options")
 
@@ -6,6 +10,9 @@ require("config.keymaps")
 
 -- Load plugins
 require("config.plugins")
+
+-- Load Nvimtree
+require("plugins.nvim-tree")
 
 -- Load colorscheme
 require("config.colorscheme")
