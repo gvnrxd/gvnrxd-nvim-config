@@ -21,3 +21,12 @@ require("plugins.lsp")
 
 -- Load CMP (autocompletion)
 require("plugins.cmp")
+
+-- Load Conform (auto formatting)
+require("plugins.conform")
+
+-- Load Telescope (file searching)
+require("plugins.telescope")
+
+-- Load Autopairs
+require("plugins.autopairs")
