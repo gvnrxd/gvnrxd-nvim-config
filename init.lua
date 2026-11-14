@@ -32,6 +32,9 @@ require("plugins.cmp")
 -- Load Conform (auto formatting)
 require("plugins.conform")
 
+-- Load linting (Lua and Luau)
+require("plugins.lint")
+
 -- Load Telescope (file searching)
 require("plugins.telescope")
 

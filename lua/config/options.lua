@@ -2,7 +2,7 @@
 vim.opt.number = true
 
 -- Relative line numbers
-vim.opt.relativenumber = tru
+vim.opt.relativenumber = true
 
 -- Enable mouse suppport
 vim.opt.mouse = "a"
@@ -20,3 +20,10 @@ vim.opt.expandtab = true
 
 -- Enable smart indentation
 vim.opt.smartindent = true
+
+-- Recognize Roblox Luau files
+vim.filetype.add({
+	extension = {
+		luau = "luau",
+	},
+})
